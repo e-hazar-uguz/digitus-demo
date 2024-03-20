@@ -1,24 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header';
+import MiniPosts from './components/mini-posts';
+import Posts from './components/posts';
+import { BrowserRouter, Routes, Route,useLocation  } from 'react-router-dom';
+import Moms from './pages/moms';
+import MomTalk from './pages/mom-talk';
+import Forum from './pages/forum';
+import Explore from './pages/explore';
+import Experts from './pages/experts';
+
+function MiniPostsWrapper() {
+  const location = useLocation();
+
+  return location.pathname === "/" ? <MiniPosts /> : null;
+}
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+      <div className="app-container">
+        <Header className="header" />
+
+        <div className="main-content">
+      <Routes>
+        <Route exact path="/" element={<Posts />} />
+        <Route path="/experts" element={<Experts />} />
+        <Route path="/explore" element={<Explore />} />
+        <Route path="/forum" element={<Forum />} />
+        <Route path="/mom-talk" element={<MomTalk />} />
+        <Route path="/moms" element={<Moms />} />
+      </Routes>
+      <MiniPostsWrapper />
     </div>
+
+      </div>
+    </BrowserRouter>
   );
 }
 

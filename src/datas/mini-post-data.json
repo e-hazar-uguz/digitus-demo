@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "user_name": "Alex de Souza",
+      "user_image":"https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltdc07f051caa5cdf6/625adf7b956c474ead99e528/DepoPhotos_14812567_(1).jpg",
+      "image_url": "https://www.indyturk.com/sites/default/files/styles/1368x911/public/article/main_image/2020/04/23/347881-1772708645.jpg?itok=ZIt0A4TO",
+      "likes":"10",
+      "vieweds":"3",
+      "comments":"5",
+      "content":"Alexsandro de Souza veya kısaca Alex "
+    },
+    {
+        "id": 2,
+        "user_name": "Alex de Souza",
+        "user_image":"https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltdc07f051caa5cdf6/625adf7b956c474ead99e528/DepoPhotos_14812567_(1).jpg",
+        "image_url": "https://www.indyturk.com/sites/default/files/styles/1368x911/public/article/main_image/2020/04/23/347881-1772708645.jpg?itok=ZIt0A4TO",
+        "likes":"10",
+        "vieweds":"3",
+        "comments":"5",
+        "content":"Alexsandro de Souza veya kısaca Alex "
+      }
+  ]
+  
